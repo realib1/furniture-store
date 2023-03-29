@@ -16,40 +16,40 @@
 </head>
 
 <body>
-  <div class="sticky top-0 z-50 py-5 shadow-md bg-white w-full">
-  <nav class="flex items-center mx-auto w-9/12 justify-between align-middle">
+  <div class="sticky top-0 z-50 py-5 shadow-md bg-white w-full border-b-2 border-primary">
+  <nav class="flex items-center mx-auto w-4/5 lg:w-9/12 justify-between align-middle">
       <div class="logo">
         <a href="index.html" class="text-primary font-bold text-2xl md:text-3xl">
           Furniture
         </a>
       </div>
+      <div class="hidden w-full menu lg:flex justify-end items-center absolute top-16 left-0 bg-white pt-0 pb-4 shadow-md border-b-2 border-primary transition-all duration-1000 lg:relative lg:top-0 lg:border-none lg:shadow-none lg:pb-0 ">
+      
+      <ul class="flex flex-col lg:flex-row lg:gap-6 items-start text-sm">
+          <li class="ml-2 cursor-pointer hover:text-primary font-semibold text-gray hover:bg-gray-light rounded">
+            <a href="index.html" class="px-4 py-2 block lg:inline-block">Home</a>
+          </li>
+          <li class="ml-2 cursor-pointer hover:text-primary font-semibold text-gray hover:bg-gray-light rounded">
+            <a href="services.html" class="px-4 py-2 block lg:inline-block">Services</a>
+          </li>
+          <li class="ml-2 cursor-pointer hover:text-primary font-semibold text-gray hover:bg-gray-light rounded">
+            <a href="about.html" class="px-4 py-2 block lg:inline-block">Doctors</a>
+          </li>
 
-      <div class="hidden lg:block w-full ">
-        <ul class="menu-open lg:relative lg:flex lg:flex-row gap-6 justify-center text-sm">
-          <li class="menu-item-open mr-6 cursor-pointer hover:text-blue-800 font-semibold text-gray ">
-            <a href="index.html">Home</a>
+          <li class="ml-2 cursor-pointer hover:text-primary font-semibold text-gray hover:bg-gray-light rounded">
+            <a href="contact.html" class="px-4 py-2 block lg:inline-block">Products</a>
           </li>
-          <li class="menu-item-open mr-6 cursor-pointer hover:text-blue-800 font-semibold text-gray">
-            <a href="services.html">Services</a>
-          </li>
-          <li class="menu-item-open mr-6 cursor-pointer hover:text-blue-800 font-semibold text-gray">
-            <a href="about.html">Doctors</a>
-          </li>
-
-          <li class="menu-item-open mr-6 cursor-pointer hover:text-blue-800 font-semibold text-gray">
-            <a href="contact.html">Products</a>
-          </li>
-          <li class="menu-item-open mr-6 cursor-pointer hover:text-blue-800 font-semibold text-gray">
-            <a href="contact.html">Gallery</a>
+          <li class="ml-2 lg:mr-0 cursor-pointer hover:text-primary font-semibold text-gray hover:bg-gray-light rounded">
+            <a href="contact.html" class="px-4 py-2 block lg:inline-block">Gallery</a>
           </li>
         </ul>
-
       </div>
-      <div class="block lg:hidden bg-red-700">
+      <div class="">
         <button title="toggle-menu" type="button"
-          class="text-gray-light bars outline-none border-none cursor-pointer lg:hidden bg-primary flex items-center px-2 py-1">   
+          class="burger text-gray-light bars outline-none border-none cursor-pointer lg:hidden bg-primary flex items-center px-2 py-1">   
           <svg class="fill-current w-5 h-5" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>toggle Menu</title>
-              <path d="M3.75 9h16.5m-16.5 6.75h16.5" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path class="hidden close" d="M6 18L18 6M6 6l12 12" stroke-linecap="round" stroke-linejoin="round"></path>
+              <path class="open" d="M3.75 9h16.5m-16.5 6.75h16.5" stroke-linecap="round" stroke-linejoin="round"></path>
             </svg>
         </button>
       </div>
@@ -62,7 +62,7 @@
       style="background-image: url(./src/assets/img/MaskGroup.jpg);">
       <div class="bg-gradient-to-bl from-black/40 via-white/40 to-black/40 w-full h-full absolute inset-0 -z-10"></div>
 
-      <div class=" w-4/5 md:max-w-lg p-8 space-y-4 rounded-md shadow-lg bg-[#DFE9F4] md:mr-20">
+      <div class="w-4/5 md:max-w-lg p-8 space-y-4 rounded-md shadow-lg bg-[#DFE9F4] md:mr-20">
         <p class="text-sm md:text-lg text-gray font-semibold">New Arrivals</p>
         <h1 class="text-2xl lg:text-4xl font-bold text-primary">Discover Our New Collection</h1>
         <p class="text-sm md:text-lg text-gray">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus,
@@ -72,7 +72,7 @@
     </section>
 
     <section class="py-6 bg-gray-light text-gray">
-      <div class="w-9/12 mx-auto">
+      <div class="w-4/5 lg:w-9/12 mx-auto">
         <div class="flex justify-between space-x-2 flex-col md:flex-row space-y-4 md:space-y-0">
           <div class="flex gap-6 justify-center">
             <div>
@@ -169,7 +169,7 @@
     </section>
 
     <section class="py-16">
-      <div class="w-9/12 mx-auto">
+      <div class="w-4/5 lg:w-9/12 mx-auto">
         <div class="text-center mb-12">
           <h2 class="text-3xl font-bold text-gray mb-2">Inspiration Collection</h2>
           <p class="text-gray text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -196,7 +196,7 @@
     </section>
 
     <section class="py-16 bg-gray-light text-gray">
-      <div class="w-9/12 mx-auto">
+      <div class="w-4/5 lg:w-9/12 mx-auto">
         <div class="flex justify-between items-center flex-col-reverse md:flex-row gap-12">
           <div class="w-full lg:w-1/2 space-y-4">
             <h2 class="text-2xl lg:text-3xl font-bold">Beautify Your Space</h2>
@@ -219,7 +219,7 @@
     </section>
 
     <section class="py-16 border-b-2 border-b-[#D7D6D6] text-gray">
-      <div class="w-9/12 mx-auto">
+      <div class="w-4/5 lg:w-9/12 mx-auto">
         <div class="text-center mb-12">
           <h2 class="text-3xl font-bold text-gray mb-2">Browse The Range</h2>
         </div>
@@ -245,7 +245,7 @@
     </section>
 
     <section class="py-16">
-      <div class="w-9/12 mx-auto text-gray">
+      <div class="w-4/5 lg:w-9/12 mx-auto text-gray">
         <div class="text-center mb-12">
           <h2 class="text-3xl font-bold text-gray mb-2">How It Works</h2>
           <p class="text-gray text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -275,7 +275,7 @@
     </section>
 
     <section class="py-16 bg-gray-light text-gray">
-      <div class="w-9/12 mx-auto text-center">
+      <div class="w-4/5 lg:w-9/12 mx-auto text-center">
         <div class="text-center mb-12 space-y-2">
           <h2 class="text-2xl md:text-3xl font-bold text-primary">Join Our Mailing List</h2>
           <p class="text-sm md:w-5/12 mx-auto">Sign up to receive inspiration, product updates, and special offers from
@@ -284,7 +284,7 @@
 
         <div class="flex justify-center">
           <input type="text"
-            class="border-2 border-primary text-xs md:text-sm px-4 py-2 md:px-6 md:py-3 focus:outline-none rounded-l-sm placeholder:text-gray -mr-2"
+            class="border-2 border-primary text-xs md:text-sm px-4 py-2 md:px-6 md:py-3 focus:outline-none rounded-l-sm placeholder:text-gray -ml-2"
             placeholder="example@email.com">
           <button
             class="text-xs md:text-sm border-2 border-primary bg-primary text-gray-light font-semibold uppercase px-4 py-2 md:px-6 md:py-3 rounded-r-sm">Subscribe</button>
@@ -292,8 +292,8 @@
       </div>
     </section>
 
-    <footer class="text-gray-light py-5 md:py-16 bg-primary relative lg:pb-5">
-      <div class="w-9/12 mx-auto">
+    <footer class="text-gray-light py-5 lg:py-16 bg-primary relative lg:pb-5">
+      <div class="w-4/5 lg:w-9/12 mx-auto">
         <div class="grid md:grid-cols-2 gap-10">
           <div class="space-y-5">
             <div>
@@ -304,11 +304,11 @@
             <div>
               <h2 class="text-2xl font-bold mb-2">Follow Us</h2>
               <ul class="flex items-center">
-                <li class="mr-2 text-2xl"><a href=""><i class="fab fa-twitter"></i></a></li>
-                <li class="mr-2 text-2xl"><a href=""><i class="fab fa-instagram"></i></a></li>
-                <li class="mr-2 text-2xl"><a href=""><i class="fab fa-facebook"></i></a></li>
-                <li class="mr-2 text-2xl"><a href=""><i class="fab fa-reddit"></i></a></li>
-                <li class="mr-2 text-2xl"><a href=""><i class="fab fa-quora"></i></a></li>
+                <li class="ml-2 text-2xl"><a href=""><i class="fab fa-twitter"></i></a></li>
+                <li class="ml-2 text-2xl"><a href=""><i class="fab fa-instagram"></i></a></li>
+                <li class="ml-2 text-2xl"><a href=""><i class="fab fa-facebook"></i></a></li>
+                <li class="ml-2 text-2xl"><a href=""><i class="fab fa-reddit"></i></a></li>
+                <li class="ml-2 text-2xl"><a href=""><i class="fab fa-quora"></i></a></li>
               </ul>
             </div>
           </div>
@@ -317,22 +317,22 @@
               <h2 class="text-2xl font-bold mb-2">Instagram Shop</h2>
             </div>
             <div class="flex">
-              <div class="mr-2">
+              <div class="ml-2">
                 <img src="./src/assets/img/IG-1.jpg" alt="">
               </div>
-              <div class="mr-2">
+              <div class="ml-2">
                 <img src="./src/assets/img/IG-2.jpg" alt="">
               </div>
-              <div class="mr-2">
+              <div class="ml-2">
                 <img src="./src/assets/img/IG-3.jpg" alt="">
               </div>
-              <div class="mr-2">
+              <div class="ml-2">
                 <img src="./src/assets/img/IG-4.jpg" alt="">
               </div>
-              <!-- <div class="mr-2">
+              <!-- <div class="ml-2">
                 <img src="./src/assets/img/MaskGroup-7.png" alt="">
               </div>
-              <div class="mr-2">
+              <div class="ml-2">
                 <img src="./src/assets/img/MaskGroup-8.png" alt="">
               </div> -->
 
@@ -340,8 +340,8 @@
           </div>
         </div>
       </div>
-      <div class="flex justify-center items-baseline mx-auto mt-20 border-slate-400 pt-3 border-t-2">
-        <p class="text-center text-sm">Copyright &copy; 2023 <a href="index.html">Furniture - All rights reserved.</a></p>
+      <div class="flex justify-center items-center mt-10 border-slate-400 pt-3 border-t-2">
+        <p class="text-center text-xs p-2 md:pt-5 text-gray-light">Copyright &copy; 2023 &nbsp; <a href="index.html">Furniture - All rights reserved.</a></p>
       </div>
     </footer>
   </main>

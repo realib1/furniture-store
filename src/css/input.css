@@ -3,3 +3,26 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* .active {
+    @apply absolute top-16 left-0 bg-white pt-0 pb-4 shadow-md border-b-2 border-primary transition-all duration-1000;
+} */
+
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    @apply bg-transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    @apply bg-gray dark:bg-gray-light;
+}
+::-webkit-scrollbar-thumb {
+    border-radius: 20px;
+    background-clip: content-box;
+}
+::-webkit-scrollbar-thumb:hover {
+    @apply bg-gray dark:bg-gray-light;
+}
