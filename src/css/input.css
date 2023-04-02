@@ -4,9 +4,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* .active {
-    @apply absolute top-16 left-0 bg-white pt-0 pb-4 shadow-md border-b-2 border-primary transition-all duration-1000;
-} */
 
 
 ::-webkit-scrollbar {
