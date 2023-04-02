@@ -17,39 +17,39 @@
 
 <body>
   <div class="sticky top-0 z-50 py-5 shadow-md bg-white w-full">
-  <nav class="flex items-center mx-auto w-4/5 lg:w-9/12 justify-between align-middle z-50">
+  <nav class="flex items-center mx-auto w-4/5 lg:w-9/12 justify-between align-middle">
       <div class="logo">
         <a href="index.html" class="text-primary font-bold text-2xl md:text-3xl">
           Furniture
         </a>
       </div>
-      <div class="hidden w-full menu lg:flex justify-end items-center absolute top-16 left-0 bg-white pt-0 pb-4 shadow-md lg:relative lg:top-0 lg:border-none lg:shadow-none lg:pb-0 ">
+      <div class="absolute mx-auto flex justify-center  top-16 left-0 w-full bg-white pt-0 pb-4 shadow-md lg:relative lg:top-0 lg:border-none lg:shadow-none lg:pb-0">
       
-      <ul class="flex flex-col lg:flex-row lg:gap-6 text-sm z-40">
-          <li class="ml-2 cursor-pointer hover:text-primary font-semibold text-gray hover:bg-gray-light rounded w-1/2 lg:w-full">
+      <ul class="hidden menu lg:flex flex-col lg:flex-row lg:gap-6 text-sm z-40 gap-0 w-4/5">
+          <li class="-ml-4 lg:ml-2 cursor-pointer hover:text-primary font-semibold text-gray hover:bg-gray-light rounded w-1/2 lg:w-full">
             <a href="index.html" class="px-4 py-2 block lg:inline-block">Home</a>
           </li>
-          <li class="ml-2 cursor-pointer hover:text-primary font-semibold text-gray hover:bg-gray-light rounded w-1/2 lg:w-full">
+          <li class="-ml-4 lg:ml-2 cursor-pointer hover:text-primary font-semibold text-gray hover:bg-gray-light rounded w-1/2 lg:w-full">
             <a href="services.html" class="px-4 py-2 block lg:inline-block">Services</a>
           </li>
-          <li class="ml-2 cursor-pointer hover:text-primary font-semibold text-gray hover:bg-gray-light rounded w-1/2 lg:w-full">
+          <li class="-ml-4 lg:ml-2 cursor-pointer hover:text-primary font-semibold text-gray hover:bg-gray-light rounded w-1/2 lg:w-full">
             <a href="about.html" class="px-4 py-2 block lg:inline-block">Doctors</a>
           </li>
 
-          <li class="ml-2 cursor-pointer hover:text-primary font-semibold text-gray hover:bg-gray-light rounded w-1/2 lg:w-full">
+          <li class="-ml-4 lg:ml-2 cursor-pointer hover:text-primary font-semibold text-gray hover:bg-gray-light rounded w-1/2 lg:w-full">
             <a href="contact.html" class="px-4 py-2 block lg:inline-block">Products</a>
           </li>
-          <li class="ml-2 lg:mr-0 cursor-pointer hover:text-primary font-semibold text-gray hover:bg-gray-light rounded w-1/2 lg:w-full">
+          <li class="-ml-4 lg:ml-2 lg:mr-0 cursor-pointer hover:text-primary font-semibold text-gray hover:bg-gray-light rounded">
             <a href="contact.html" class="px-4 py-2 block lg:inline-block">Gallery</a>
           </li>
         </ul>
       </div>
-      <div class="">
+      <div class="z-40 relative">
         <button title="toggle-menu" type="button"
-          class="burger text-gray-light bars outline-none border-none cursor-pointer lg:hidden bg-primary flex items-center px-2 py-1">   
+          class="text-gray-light bars outline-none border-none cursor-pointer lg:hidden bg-primary flex items-center px-2 py-1 z-50">   
           <svg class="fill-current w-5 h-5" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>toggle Menu</title>
+            <path class="open" d="M3.75 9h16.5m-16.5 6.75h16.5" stroke-linecap="round" stroke-linejoin="round"></path>
             <path class="hidden close" d="M6 18L18 6M6 6l12 12" stroke-linecap="round" stroke-linejoin="round"></path>
-              <path class="open" d="M3.75 9h16.5m-16.5 6.75h16.5" stroke-linecap="round" stroke-linejoin="round"></path>
             </svg>
         </button>
       </div>

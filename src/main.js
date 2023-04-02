@@ -11,7 +11,19 @@ bars.addEventListener('click', () => {
     open.classList.toggle('hidden');
     close.classList.toggle('hidden');
 
-});
+    // close menu when clicking on a link
+    const links = document.querySelectorAll('.menu a');
+    links.forEach((link) => {
+        link.addEventListener('click', () => {
+            menu.classList.add('hidden');
+            open.classList.remove('hidden');
+            close.classList.add('hidden');
+        });
+    });
+
+
+
+
     // close menu when clicking outside
     window.addEventListener('click', (e) => {
         if (e.target !== menu && e.target !== bars && e.target !== open && e.target !== close) {
@@ -20,6 +32,13 @@ bars.addEventListener('click', () => {
             close.classList.add('hidden');
         }
     });
+});
+
+
+
+
+
+
 
 // Scroll to top button
 // const scrollToTopBtn = document.querySelector('.scroll-to-top-btn');
